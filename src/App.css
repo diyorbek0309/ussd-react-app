@@ -254,6 +254,10 @@
     margin: 0 5px;
     padding: 5px;
   }
+  .header_top img {
+    width: 150px;
+    height: 150px;
+  }
   .wrap_shape1 {
     margin: 0 56%;
     margin-top: 20px;
@@ -261,6 +265,24 @@
   .header_button button {
     padding: 10px 10px;
     margin: 0 20px;
+  }
+  .daily_wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    padding-top: 22px;
+  }
+  .monthly_wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    padding-top: 22px;
+  }
+  .non_stop_monthly_wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    padding-top: 22px;
   }
 }
 .box_item a {
