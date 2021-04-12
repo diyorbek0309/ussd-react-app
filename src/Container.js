@@ -27,6 +27,7 @@ function Container() {
       setShowLeft(!showLeft);
     }
     setShowRight(false);
+    console.log("dhfkdjfg");
   };
 
   const clickHandler4 = () => {
@@ -38,28 +39,37 @@ function Container() {
 
   return (
     <>
+      <div className="clr"></div>
       <div>
-        <HeaderButton
+        <div className="header_button">
+          <button onClick={clickHandler3}>Oddiy</button>
+          <button onClick={clickHandler4}>NON-Stop</button>
+        </div>
+        {/* <HeaderButton 
           button_text="Oddiy to'plamlar"
           clickHandler={clickHandler3}
         />
         <HeaderButton
           button_text="NON-Stop to'plamlar"
           clickHandler={clickHandler4}
-        />
+        /> */}
       </div>
       {showLeft ? (
         <div>
-          <button onClick={clickHandler1}>Kunlik to'plamlar</button>
-          <button onClick={clickHandler2}>Oylik to'plamlar</button>
+          <div className="button_toplamlar">
+            <button onClick={clickHandler1}>Kunlik to'plamlar</button>
+            <button onClick={clickHandler2}>Oylik to'plamlar</button>
+          </div>
           {displayLeft ? <ToggleContent type="daily" /> : null}
           {displayRight ? <ToggleContent type="monthly" /> : null}
         </div>
       ) : (
-        <div>
-          <button>Oylik to'plamlar</button>
+        <>
+          <div className="button_toplamlar_non">
+            <button>Oylik to'plamlar</button>
+          </div>
           <ToggleContent type="non_stop_monthly" />
-        </div>
+        </>
       )}
     </>
   );

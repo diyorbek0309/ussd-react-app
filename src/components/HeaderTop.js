@@ -1,11 +1,10 @@
 import React from "react";
-
+import logo from "../img/uzmobile.png";
 function HeaderTop() {
   return (
     <div className="header_top">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, minus.
-      </h1>
+      <img src={logo} alt="" />
+      <h1>UZMOBILEDAN INTERNET TO'PLAMLAR</h1>
     </div>
   );
 }
