@@ -203,7 +203,7 @@
 }
 @media (max-width: 767px) {
   .footer_img img {
-    height: 50%;
+    height: 47%;
     object-fit: cover;
     width: 100%;
   }
